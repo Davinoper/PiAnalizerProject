@@ -22,12 +22,12 @@ mvn clean install
 
 ## 📚 Documentação
 
-Para acessar a documentação da api importe as collection do postman:
+Para acessar a documentação da api importe a collection do postman:
 - piAnalizerProject.postman_collection.json
 
 ## 🤔 Manual de Utilização
 
-Abaixo uma breve explicaçõ do funcionamento dos endpoins:
+Abaixo uma breve explicação do funcionamento dos endpoins:
 - Post uploadFile -> Faz o upload do arquivo para leitura;
 - Get FileNames -> Busca o nome de todos os arquivos armazenados;
 - Get BestSequence -> Reliza o processamento e retorna a sequência mais longa de números primos.
