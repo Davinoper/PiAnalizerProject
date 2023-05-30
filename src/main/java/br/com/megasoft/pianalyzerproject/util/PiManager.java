@@ -51,13 +51,13 @@ public class PiManager {
         return primeNumbers;
     }
 
-    public String findBestSequence(String piDigits, List<BigInteger> primeNumbers) {
+    public String findBestSequence(String piNumber, List<BigInteger> primeNumbers) {
         var bestSequence = "";
         var sequenceEnd = false ;
         int i = 0;
         String sequence ="";
-        for (int j = i+1;(j <=  piDigits.length() & !sequenceEnd & i <= piDigits.length() - 1);) {
-            String subsequence = piDigits.substring(i, j);
+        for (int j = i+1;(j <=  piNumber.length() & !sequenceEnd & i <= piNumber.length() - 1);) {
+            String subsequence = piNumber.substring(i, j);
             BigInteger number;
             try{
                 number = new BigInteger(subsequence);
@@ -76,9 +76,9 @@ public class PiManager {
                 sequence= "";
                 i++;
                 j = i+1;
-            }else if(j-i < 3 &  j <=  piDigits.length() ){
+            }else if(j-i < 3 &  j <=  piNumber.length() ){
                 j++;
-            }else if(j-i == 3 &  j <=  piDigits.length() &  i <= piDigits.length() - 1){
+            }else if(j-i == 3 &  j <=  piNumber.length() &  i <= piNumber.length() - 1){
                 i++;
                 j = i+1;
                 sequence= "";
