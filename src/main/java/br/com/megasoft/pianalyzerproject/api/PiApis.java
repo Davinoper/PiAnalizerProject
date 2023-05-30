@@ -1,8 +1,8 @@
 package br.com.megasoft.pianalyzerproject.api;
 
 
-import br.com.megasoft.pianalyzerproject.domain.Notice;
-import br.com.megasoft.pianalyzerproject.domain.Result;
+import br.com.megasoft.pianalyzerproject.model.Notice;
+import br.com.megasoft.pianalyzerproject.model.Result;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

@@ -55,7 +55,7 @@ public class PiManager {
         var bestSequence = "";
         var sequenceEnd = false ;
         int i = 0;
-        String sequencia ="";
+        String sequence ="";
         for (int j = i+1;(j <=  piDigits.length() & !sequenceEnd & i <= piDigits.length() - 1);) {
             String subsequence = piDigits.substring(i, j);
             BigInteger number;
@@ -65,15 +65,15 @@ public class PiManager {
                 throw new InvalidFileException();
             }
             if (primeNumbers.contains(number)) {
-                sequencia +=  subsequence;
+                sequence +=  subsequence;
                 i=j;
                 j = i+1;
-            }else if (sequencia.length() == 0){
+            }else if (sequence.length() == 0){
                 i++;
                 j = i+1;
-            }else if (j-i==3 & sequencia.length() > bestSequence.length()){
-                bestSequence = sequencia;
-                sequencia= "";
+            }else if (j-i==3 & sequence.length() > bestSequence.length()){
+                bestSequence = sequence;
+                sequence= "";
                 i++;
                 j = i+1;
             }else if(j-i < 3 &  j <=  piDigits.length() ){
@@ -81,7 +81,7 @@ public class PiManager {
             }else if(j-i == 3 &  j <=  piDigits.length() &  i <= piDigits.length() - 1){
                 i++;
                 j = i+1;
-                sequencia= "";
+                sequence= "";
             }else{
                 sequenceEnd = true;
             }

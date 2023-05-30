@@ -1,12 +1,12 @@
 package br.com.megasoft.pianalyzerproject.service;
 
 import br.com.megasoft.pianalyzerproject.constant.Message;
-import br.com.megasoft.pianalyzerproject.domain.Notice;
+import br.com.megasoft.pianalyzerproject.model.Notice;
 import br.com.megasoft.pianalyzerproject.util.PiManager;
 import br.com.megasoft.pianalyzerproject.util.UploadUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import br.com.megasoft.pianalyzerproject.domain.Result;
+import br.com.megasoft.pianalyzerproject.model.Result;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
