@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "56b79787-15a4-40ee-a107-6c3d9dea6309",
+		"name": "piAnalizerProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get BestSequence",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pi/?file=pi-1M.txt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pi",
+						""
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "pi-1M.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file\n",
+							"type": "file",
+							"src": "/C:/Users/david/OneDrive/Área de Trabalho/pi-1M.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pi/files/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pi",
+						"files",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get filesNames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
